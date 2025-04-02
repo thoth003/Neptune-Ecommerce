@@ -1,0 +1,68 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-inicio {
+    width: 200px;
+}
+
+/* Estilo da seção de pesquisa */
+.search-container {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+select, input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.valores {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.valores input {
+    width: 120px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    select, input {
+        width: 200px;
+    }
+
+    .valores input {
+        width: 100px;
+    }
+}
